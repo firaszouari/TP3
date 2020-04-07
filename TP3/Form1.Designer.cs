@@ -62,6 +62,7 @@
             this.prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_ListEmp = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.Grp_Ouv.SuspendLayout();
             this.Grp_Cad.SuspendLayout();
@@ -72,6 +73,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Btn_ListEmp);
             this.groupBox1.Controls.Add(this.Btn_Ajout);
             this.groupBox1.Controls.Add(this.Grp_Ouv);
             this.groupBox1.Controls.Add(this.Grp_Cad);
@@ -98,7 +100,7 @@
             // 
             this.Btn_Ajout.Location = new System.Drawing.Point(817, 246);
             this.Btn_Ajout.Name = "Btn_Ajout";
-            this.Btn_Ajout.Size = new System.Drawing.Size(231, 41);
+            this.Btn_Ajout.Size = new System.Drawing.Size(113, 41);
             this.Btn_Ajout.TabIndex = 14;
             this.Btn_Ajout.Text = "Ajout";
             this.Btn_Ajout.UseVisualStyleBackColor = true;
@@ -404,6 +406,16 @@
             this.salaire.Name = "salaire";
             this.salaire.Width = 125;
             // 
+            // Btn_ListEmp
+            // 
+            this.Btn_ListEmp.Location = new System.Drawing.Point(955, 246);
+            this.Btn_ListEmp.Name = "Btn_ListEmp";
+            this.Btn_ListEmp.Size = new System.Drawing.Size(127, 41);
+            this.Btn_ListEmp.TabIndex = 15;
+            this.Btn_ListEmp.Text = "Lister Employés";
+            this.Btn_ListEmp.UseVisualStyleBackColor = true;
+            this.Btn_ListEmp.Click += new System.EventHandler(this.Btn_ListEmp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -464,6 +476,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateNaissance;
         private System.Windows.Forms.DataGridViewTextBoxColumn salaire;
+        private System.Windows.Forms.Button Btn_ListEmp;
     }
 }
 

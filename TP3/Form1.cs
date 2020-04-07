@@ -164,5 +164,11 @@ namespace TP3
                 displayGrid();
             }
         }
+
+        private void Btn_ListEmp_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+        }
     }
 }
