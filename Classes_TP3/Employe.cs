@@ -4,11 +4,11 @@ namespace Classes_TP3
 {
     public abstract class Employe : IEquatable<Employe>
     {
-
         public int Matricule { get; set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public DateTime Datenaissance { get; set; }
+
         public Employe(int Matricule, string Nom, string Prenom, DateTime dn)
         {
             this.Matricule = Matricule;
@@ -17,13 +17,15 @@ namespace Classes_TP3
             this.Datenaissance = dn;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return "Matricule   "+ Matricule+"";
         }
         public bool Equals(Employe other)
         {
-            throw new NotImplementedException();
+            return other.Matricule == Matricule;
         }
+
+        public abstract double GetSalaire();
     }
 }
